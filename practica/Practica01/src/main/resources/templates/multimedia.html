@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout/fragmentos :: head}">
+    <title>TechShop - Multimedia</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header th:replace="~{layout/fragmentos :: header}" />
+
+    <div class="container mt-4">
+        <aside>
+            <h1>Multimedia</h1>
+            <p>Incorporación de recursos multimedia en el sitio web...</p>
+        </aside>
+        <section>
+            <h2>Uso de Multimedia</h2>
+            <article class="mb-4">
+                <h3>Música Celta</h3>
+                <audio controls>
+                    <source src="/audios/musica.mp3" type="audio/mpeg">
+                    Your browser does not support the <code>audio</code> tag.
+                </audio>
+            </article>
+            <article class="mb-4">
+                <h3>Película de Acción</h3>
+                <div class="ratio ratio-16x9" style="max-width: 400px;">
+                    <video controls>
+                        <source src="/videos/torpedo.mp4" type="video/mp4">
+                        Your browser does not support the <code>video</code> tag.
+                    </video>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer th:replace="~{layout/fragmentos :: footer}" />
+</body>
+
+</html>

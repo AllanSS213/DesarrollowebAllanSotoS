@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout/fragmentos :: head}">
+    <title>TechShop - Ejemplo 2</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header th:replace="~{layout/fragmentos :: header}" />
+
+    <div class="container mt-4">
+        <aside>
+            <h1>Mis Autos</h1>
+            <p>Los autos que en mi subconsiente llevo todos los dias..</p>
+        </aside>
+        <section>
+            <h2>Lunes</h2>
+            <img src="/img/lunes.jpg" width="300" alt="" class="img-fluid mb-3" />
+            <h2>Martes</h2>
+            <img src="https://www.record.com.mx/sites/default/files/articulos/2023/03/30/hennessey_venom_f5_roadster-6.jpg"
+                width="300" alt="" class="img-fluid mb-3" />
+        </section>
+    </div>
+
+    <footer th:replace="~{layout/fragmentos :: footer}" />
+</body>
+
+</html>
