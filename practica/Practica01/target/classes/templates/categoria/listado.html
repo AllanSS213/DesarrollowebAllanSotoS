@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout/fragmentos :: head}">
+    <title>TechShop</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header th:replace="~{layout/fragmentos :: header}" />
+
+    <section class="container mt-5">
+        <div class="card text-center">
+            <div class="card-header">
+                Construcción
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Sección en Mantenimiento</h5>
+                <p class="card-text">Esta funcionalidad estará disponible pronto.</p>
+                <a href="/" class="btn btn-primary">Regresar al Inicio</a>
+            </div>
+            <div class="card-footer text-muted">
+                TechShop
+            </div>
+        </div>
+    </section>
+
+    <footer th:replace="~{layout/fragmentos :: footer}" />
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout/fragmentos :: head}">
+    <title>TechShop - iFrames</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header th:replace="~{layout/fragmentos :: header}" />
+
+    <div class="container mt-4">
+        <aside>
+            <h1>iFrames</h1>
+            <p>Uso de iFrames dentro de nuestro sitio web</p>
+        </aside>
+        <section>
+            <h2>iFrames</h2>
+            <article class="mb-4">
+                <h3>Sitio Web Interno</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="http://ufidelitas.ac.cr"></iframe>
+                </div>
+            </article>
+            <article class="mb-4">
+                <h3>YouTube</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/yScNIsLTLYA" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="mb-4">
+                <h3>Ubícanos</h3>
+                <div class="ratio ratio-4x3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.138115551783!2d-84.00616509999999!3d9.9933394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e66128c5f425%3A0x34e639cd116a577e!2sF%C3%A1brica%20Nacional%20de%20Banderas!5e0!3m2!1sen!2scr!4v1748033891099!5m2!1sen!2scr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer th:replace="~{layout/fragmentos :: footer}" />
+</body>
+
+</html>
